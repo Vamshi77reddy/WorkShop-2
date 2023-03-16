@@ -23,13 +23,15 @@ public static void main(String[] args) {
 break;
 		case 2:
 			System.out.println(" showing Contact");
-addressBook.showContactsDetails(contact);
+addressBook.showContacts();
 break;
 default :
 	System.out.println("default choice");
-	
 		}
-		while(Choice==1);
+		System.out.println("Press 1 to continue");
+		Choice=sc.nextInt();
+		}
+		while(i==1);
 		
 	}
 	static Contact getContacts() {
